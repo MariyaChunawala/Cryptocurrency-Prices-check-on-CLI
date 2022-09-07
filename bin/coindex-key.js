@@ -7,13 +7,13 @@ program
     .action(key.set);
 
 program
-    .command('Show')
+    .command('show')
     .description('Show an API Key')
     .action(key.show);
 
 program
     .command('remove')
-    .description('Set an API Key')
+    .description('Remove an API Key')
     .action(key.remove);
 
 program.parse(process.argv);
